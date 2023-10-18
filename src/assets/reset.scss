@@ -1,0 +1,33 @@
+// 将a标签改为北极星的样式
+a {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline;
+  text-align: inherit;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--p-interactive);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: var(--p-interactive-hovered);
+    text-decoration: none;
+  }
+}
+
+.Polaris-EmptyState .Polaris-TextContainer .Polaris-DisplayText {
+  font-weight: 600;
+}
+
+.Polaris-EmptyState .Polaris-EmptyState__Details {
+  max-width: 440px !important;
+}
+.Polaris-Banner__Actions .Polaris-ButtonGroup .Polaris-Banner__PrimaryAction a {
+  color: inherit;
+}
+.Polaris-TopBar__LogoContainer {
+  pointer-events: none;
+}

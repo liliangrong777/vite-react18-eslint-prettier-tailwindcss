@@ -1,0 +1,24 @@
+@import './tailwind.scss';
+@import './reset.scss';
+
+#action-click--disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+#action-hover--clear {
+  cursor: default;
+  text-decoration: none;
+}
+
+.p-border-dashed {
+  border-bottom: 1px dashed #c9cccf;
+}
+
+.p-danger-link {
+  color: #d82c0d;
+  &:hover {
+    color: #d82c0d;
+    opacity: 0.9;
+  }
+}
