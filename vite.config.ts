@@ -7,10 +7,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 export default defineConfig(({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
   const isDevMode = process.env.NODE_ENV === 'development';
-  const basePath =
-    process.env.VITE_API_ORIGIN + (process.env.VITE_ROUTER_BASE_NAME || '');
   return {
-    base: basePath,
     plugins: [
       react({
         babel: {
