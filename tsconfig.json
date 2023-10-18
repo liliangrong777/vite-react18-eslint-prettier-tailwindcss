@@ -19,8 +19,27 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*",
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./typings/"
+    ]
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "plugin",
+    "typings",
+    "vite.config.ts",
+    "vite.config.plugin.ts",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
 }
