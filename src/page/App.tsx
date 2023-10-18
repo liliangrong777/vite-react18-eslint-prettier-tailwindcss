@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <div className="pw-bg-red-200">123</div>
-      <div className="pw-w-[500px] pw-bg-blue-500 pw-mt-2">
+      <div className="pw-bg-red-200 pw-px-4 pw-py-2">123</div>
+      <div className="pw-mt-2 pw-flex  pw-max-w-xs pw-items-center pw-justify-between pw-bg-blue-500 pw-px-5">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
